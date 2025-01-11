@@ -17,6 +17,6 @@ A real-time chat application built with React and Firebase. This app allows user
 - **Package Management:** npm
 - **Emoji Picker:** `emoji-picker-react`
 
-<><><><><>gif downloading please wait <><><><><>
+<><><><><>gif is loading please wait <><><><><>
 
 ![](ekran.gif)
