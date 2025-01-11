@@ -1,14 +1,13 @@
 import { signOut } from "firebase/auth";
-import React from "react";
 import { auth } from "../firebase";
 
 const RoomPage = ({ setIsAuth, setRoom }) => {
-  // çıkış yap
+  // çıkış
   const logout = () => {
-    // yetki state' ini false'a çek
+    // yetki state'ini false'a çek
     setIsAuth(false);
 
-    // local'daki tekeni kaldır
+    // local'deki tokeni kaldır
     localStorage.removeItem("token");
 
     // firebase oturumunu kapat

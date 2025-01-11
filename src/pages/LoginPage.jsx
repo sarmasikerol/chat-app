@@ -1,12 +1,12 @@
 import { signInWithPopup } from "firebase/auth";
-import React from "react";
 import { auth, provider } from "../firebase";
 
 const LoginPage = ({ setIsAuth }) => {
-  // google ile oturum aç
+  // butona tıklanınca google ile oturum aç
   const handleClick = () => {
     signInWithPopup(auth, provider)
       .then((res) => {
+        // yetkisini true'ya çekiyoruz
         setIsAuth(true);
 
         // sayfa yenilenince tekrar giriş yapmak zorunda olmasın diye localde tokenini saklıyoruz
@@ -22,7 +22,7 @@ const LoginPage = ({ setIsAuth }) => {
         <p>Devam Etmek İçin Giriş Yapın</p>
 
         <button onClick={handleClick}>
-          <img width={30} src="g-logo.png" alt="" />
+          <img width={30} src="g-logo.png" alt="google logo" />
           <span>Google ile Gir</span>
         </button>
       </div>
